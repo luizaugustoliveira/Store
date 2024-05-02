@@ -3,6 +3,13 @@ import { useRouter } from "next/navigation"
 import { styled } from "styled-components"
 import { Divider } from "./divider"
 
+
+/*
+Utiliza o roteador do Next.js para navegar para a página de detalhes do produto quando o cartão é clicado. Essa ação é acionada pela função handleNavigate, que constrói uma URL com o ID do produto.
+
+formatPrice para formatar os dados de preço
+*/
+
 interface ProductCardProps {
     image: string,
     title: string,
