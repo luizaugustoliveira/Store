@@ -7,7 +7,7 @@ const FilterContainer = styled.div`
     display: flex;
     width: 100%;
     align-items: start;
-    justify-content: center; // Ajuste para centralizar o único filtro disponível
+    justify-content: center;
 `
 
 export function FilterBar() {
@@ -17,3 +17,5 @@ export function FilterBar() {
         </FilterContainer>
     );
 }
+
+// Container para se acaso eu queira colocar filtros exemplo: Todos os produtos | Camisas | Canecas

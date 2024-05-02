@@ -7,3 +7,5 @@ export const Divider = styled.span`
     padding: 0px;
     background: var(--shapes);
 `
+
+/* Estilização de uma linha divisória com o CSS */

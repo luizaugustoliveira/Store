@@ -2,6 +2,10 @@
 
 import { styled } from "styled-components";
 
+/*
+Cria e estiliza um componente de filtro de tipo. É usado styled-components para aplicar estilos. Se mais opções de filtro forem necessárias, este código pode ser expandido.
+*/
+
 const FilterList = styled.ul`
     display: flex;
     align-items: center;
@@ -13,7 +17,7 @@ const FilterList = styled.ul`
 
 const FilterItem = styled.li`
     font-family: inherit;
-    font-weight: 600; // Todos os produtos sempre selecionado
+    font-weight: 600; // Todas as camisas sempre selecionado
     font-size: 12px;
     line-height: 18px;
     text-align: center;
@@ -32,7 +36,7 @@ export function FilterByType() {
     return (
         <FilterList>
             <FilterItem>
-                Todos os produtos
+                Todas as camisas
             </FilterItem>
         </FilterList>
     );
