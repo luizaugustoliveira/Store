@@ -1,3 +1,5 @@
+// Componentes principais e estilos globais são definidos.
+
 import { Header } from '@/components/header'
 import './globals.css'
 import { Saira } from 'next/font/google'
