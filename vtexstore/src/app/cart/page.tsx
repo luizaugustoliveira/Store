@@ -9,6 +9,12 @@ import { ProductInCart } from "@/types/product";
 import { formatPrice } from "@/utils/format-price";
 import { styled } from "styled-components";
 
+/*
+LocalStorage: Utiliza useLocalStorage para obter os itens do carrinho armazenados localmente.
+Funções de manipulação de itens do carrinho: handleUpdateQuantity e handleDeleteItem são chamadas para atualizar a quantidade ou remover um item do carrinho, respectivamente.
+Cálculo do total do carrinho: A função calculateTotal é usada para calcular o total do carrinho e inclui a taxa de entrega.
+*/
+
 const Container = styled.div`
     display: flex;
     justify-content: center;
