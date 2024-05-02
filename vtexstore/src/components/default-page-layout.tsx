@@ -11,3 +11,7 @@ export const DefaultPageLayout = styled.div`
         padding: 34px 160px;
     }
 `
+
+/*
+ Styled-components para criar um componente estilizado no Next.js com o use client indicando que este código deve ser executado apenas no lado do cliente.
+*/
