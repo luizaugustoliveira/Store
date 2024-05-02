@@ -3,6 +3,12 @@ import { useLocalStorage } from "@/hooks/useLocalStorage";
 import { CartIcon } from "./icons/cart-icon";
 import { useRouter } from "next/navigation";
 
+/*
+useLocalStorage para manter um estado que reflete os itens no carrinho
+
+Hook retorna value que é usado para determinar se o badge de contagem deveria ser mostrado, baseando-se na existência de itens no carrinho.
+*/
+
 const CartCount = styled.span`
     width: 17px;
     height: 17px;
