@@ -8,6 +8,18 @@ import { Product } from "@/types/product";
 import { formatPrice } from "@/utils/format-price";
 import { styled } from "styled-components"
 
+/*
+useProduct: Um hook que faz uma chamada à API para obter os detalhes do produto com base no ID fornecido.
+
+props: { searchParams: { id: string } }: Este componente espera um objeto searchParams contendo o ID do produto a ser exibido.
+
+Hook useProduct: Utiliza o hook useProduct para obter os detalhes do produto com base no ID fornecido nas props.
+
+Função handleAddToCart: Uma função que é chamada quando o botão "Adicionar ao carrinho" é clicado. Ela adiciona o produto ao carrinho armazenado localmente, verificando se já existe um produto com o mesmo ID no carrinho e incrementando a quantidade, caso contrário, adicionando um novo item ao carrinho.
+
+
+*/
+
 interface ProductProps {
 
 }
