@@ -4,6 +4,12 @@ import { ChangeEvent } from "react"
 import { styled } from "styled-components"
 import { DeleteIcon } from "../icons/delete-icon"
 
+/*
+    product: O produto atual a ser exibido no item do carrinho.
+    handleUpdateQuantity: Função para atualizar a quantidade do produto.
+    handleDelete: Função para remover o produto do carrinho.
+*/
+
 interface CartItemProps {
     product: ProductInCart
     handleUpdateQuantity(id: string, quantity: number): void
@@ -85,6 +91,12 @@ const SelectQuantity = styled.select`
     font-weight: 400;
     font-size: 16px;
 `
+
+/*
+    handleChange: Uma função que captura eventos de mudança no select de quantidade, converte o valor selecionado para número e chama handleUpdateQuantity passando o id do produto e a nova quantidade.
+    Botão com um DeleteIcon para remover o produto, com um evento onClick que chama handleDelete com o id do produto.
+*/
+
 
 export function CartItem({ product, handleUpdateQuantity, handleDelete } : CartItemProps){
     const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
