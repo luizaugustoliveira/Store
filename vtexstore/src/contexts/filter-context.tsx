@@ -4,6 +4,10 @@ import { FilterType } from "@/types/filter-types";
 import { PriorityTypes } from "@/types/priority-types";
 import { ReactNode, createContext, useState } from "react";
 
+/*
+Ele utiliza o useState para inicializar os estados dos filtros (search, page, type, priority) com valores padrão e fornece esses valores através do contexto FilterContext.Provider.
+*/
+
 export const FilterContext = createContext({
     search: '',
     page: 0,
