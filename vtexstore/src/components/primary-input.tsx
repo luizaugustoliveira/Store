@@ -2,6 +2,12 @@ import { InputHTMLAttributes } from "react";
 import { styled } from "styled-components";
 import { SearchIcon } from "./icons/search-icon";
 
+/*
+Ao ser incorporado o props que estende o InputHTMLAttributes<HTMLInputElement>, é permitido que ele receba qualquer propriedade adicional de um input HTML padrão. Isso inclui eventos como onBlur, onFocus, além de type, placeholder, etc.
+
+A função handleChange é chamada com o novo valor do input sempre que ele muda. Isso é feito passando event.target.value do evento onChange.
+*/
+
 export const PrimaryInput = styled.input`
     width: 100%;
     border-radius: 8px;
