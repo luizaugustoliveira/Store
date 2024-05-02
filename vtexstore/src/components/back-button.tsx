@@ -2,6 +2,8 @@ import { styled } from "styled-components";
 import { BackIcon } from "./icons/back-icon";
 import { useRouter } from "next/navigation";
 
+// Botão de voltar retornando sempre para a home através do handleNavigate com o evento de click
+
 const Button = styled.button`
     display: flex;
     align-items: center;

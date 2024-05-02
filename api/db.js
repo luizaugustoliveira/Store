@@ -18,8 +18,8 @@ const allProducts = new Array(TOTAL_PAGES).fill(1).reduce((acc) => {
     ...product, 
     id: faker.datatype.uuid(),
     price_in_cents: faker.datatype.number({
-      min: 4000, // Alterado o valor mínimo para $40
-      max: 8000, // Alterado o valor máximo para $80
+      min: 4000, // valor mínimo para $40
+      max: 8000, // valor máximo para $80
     }),
     sales: faker.datatype.number(40),
     created_at: faker.date.past()
