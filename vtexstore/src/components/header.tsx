@@ -6,6 +6,11 @@ import { PrimaryInputWSearchIcon } from "./primary-input"
 import { CartControl } from "./cart-control"
 import { useFilter } from "@/hooks/useFilter"
 
+/*    useFilter(): Este hook é responsável por gerenciar o estado de filtragem, retornando valores como setSearch e search que são usados na barra de pesquisa.
+    <Logo>: Renderiza o logotipo como um link que redireciona para a página inicial.
+    <PrimaryInputWSearchIcon>: Renderiza a barra de pesquisa com um ícone de busca, permitindo que os usuários pesquisem por produtos específicos.
+    <CartControl>: Renderiza o controle de carrinho de compras. */
+
 const sairaStencil = Saira_Stencil_One({
     weight: ['400'],
     subsets: ['latin']
@@ -19,7 +24,7 @@ const TagHeader = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 24px;
+    padding: 20px 160px;
 
     > div {
         display: flex;
@@ -54,7 +59,7 @@ export function Header(props : HeaderProps){
 
     return(
         <TagHeader>
-            <Logo className={sairaStencil.className} href="/">VtexStore</Logo>
+            <Logo className={sairaStencil.className} href="/">Vtex Store</Logo>
             <div>
                 <PrimaryInputWSearchIcon
                     value={search}
