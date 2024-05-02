@@ -5,6 +5,11 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactNode } from "react";
 import { ThemeProvider } from "styled-components";
 
+
+/*
+DefaultProviders envolve os provedores de contexto e de consulta para garantir que certos recursos estejam disponíveis globalmente na aplicação
+*/
+
 interface DefaultProvidersProps {
     children: ReactNode
 }
