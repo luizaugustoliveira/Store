@@ -3,14 +3,14 @@ const faker = require('faker');
 const TOTAL_PAGES = 5;
 
 const baseProducts = [
-  { name: 'Hogwarts Feitiços', description: faker.lorem.paragraph(), image_url: 'https://firebasestorage.googleapis.com/v0/b/imagens-bc6d5.appspot.com/o/Hogwarts_Feiti%C3%A7os.jpeg?alt=media&token=62825299-ce4e-4ac5-ab0f-ce548a25d524', category: 't-shirts' },
-  { name: 'Ideas Are Bulletproof', description: faker.lorem.paragraph(), image_url: 'https://firebasestorage.googleapis.com/v0/b/imagens-bc6d5.appspot.com/o/Ideas_Are_Bulletproof.jpeg?alt=media&token=11cd22f3-0934-41a7-bd8f-0274b14dd742', category: 't-shirts' },
-  { name: 'Breaking Bad', description: faker.lorem.paragraph(), image_url: 'https://firebasestorage.googleapis.com/v0/b/imagens-bc6d5.appspot.com/o/Breaking_Bad2.jpeg?alt=media&token=894601bd-82e6-48b6-be9c-d02f2442b5d7', category: 't-shirts' },
-  { name: 'Magneto X-Men', description: faker.lorem.paragraph(), image_url: 'https://firebasestorage.googleapis.com/v0/b/imagens-bc6d5.appspot.com/o/Magneto.jpeg?alt=media&token=cc255aee-be41-41db-a4bb-205ea61a6a4a', category: 't-shirts' },
-  { name: 'Wolwerine X-Men Origins', description: faker.lorem.paragraph(), image_url: 'https://firebasestorage.googleapis.com/v0/b/imagens-bc6d5.appspot.com/o/Wolwerine.jpeg?alt=media&token=4e577737-e733-4808-b8b2-dfd7181a9f9f', category: 't-shirts' },
-  { name: 'Frase Filme 300', description: faker.lorem.paragraph(), image_url: 'https://firebasestorage.googleapis.com/v0/b/imagens-bc6d5.appspot.com/o/Frase%20Filme%20300.jpeg?alt=media&token=d88f5648-ddb3-4a5c-9671-ba87f718e7ce', category: 't-shirts' },
-  { name: 'Batman Begins', description: faker.lorem.paragraph(), image_url: 'https://firebasestorage.googleapis.com/v0/b/imagens-bc6d5.appspot.com/o/Batman_Begins_.jpeg?alt=media&token=d7d0b645-720d-4ef0-b078-a55e217a68ab', category: 't-shirts' },
-  { name: 'Leônidas 300', description: faker.lorem.paragraph(), image_url: 'https://firebasestorage.googleapis.com/v0/b/imagens-bc6d5.appspot.com/o/300.jpeg?alt=media&token=fa666455-c9bb-43d3-ad4a-5ee18f53d31a', category: 't-shirts' },
+  { name: 'Hogwarts Feitiços', description: faker.lorem.paragraph(), image_url: 'https://firebasestorage.googleapis.com/v0/b/imagens-bc6d5.appspot.com/o/Hogwarts_Feiti%C3%A7os%201.png?alt=media&token=530047aa-46f3-4c5d-ad22-58a40de8c711', category: 't-shirts' },
+  { name: 'Ideas Are Bulletproof', description: faker.lorem.paragraph(), image_url: 'https://firebasestorage.googleapis.com/v0/b/imagens-bc6d5.appspot.com/o/Ideas_Are_Bulletproof%201.png?alt=media&token=c0fe9889-0237-4739-9a63-ca45c94c980a', category: 't-shirts' },
+  { name: 'Breaking Bad', description: faker.lorem.paragraph(), image_url: 'https://firebasestorage.googleapis.com/v0/b/imagens-bc6d5.appspot.com/o/Breaking_Bad2%201.jpg?alt=media&token=6d6ec2cc-2b39-46af-91d5-d981548907cb', category: 't-shirts' },
+  { name: 'Magneto X-Men', description: faker.lorem.paragraph(), image_url: 'https://firebasestorage.googleapis.com/v0/b/imagens-bc6d5.appspot.com/o/Magneto%201.jpg?alt=media&token=fc8a4bfb-351d-45a2-a978-26d3e4cf6ed1', category: 't-shirts' },
+  { name: 'Wolwerine X-Men Origins', description: faker.lorem.paragraph(), image_url: 'https://firebasestorage.googleapis.com/v0/b/imagens-bc6d5.appspot.com/o/Wolwerine%201.jpg?alt=media&token=2c180cd4-35a8-49ed-81c5-50631299fd5b', category: 't-shirts' },
+  { name: 'Frase Filme 300', description: faker.lorem.paragraph(), image_url: 'https://firebasestorage.googleapis.com/v0/b/imagens-bc6d5.appspot.com/o/Frase%20Filme%20300%201.png?alt=media&token=f0e7628f-8a84-4fdf-acc1-d10496ad7d29', category: 't-shirts' },
+  { name: 'Batman Begins', description: faker.lorem.paragraph(), image_url: 'https://firebasestorage.googleapis.com/v0/b/imagens-bc6d5.appspot.com/o/Batman_Begins_%201.png?alt=media&token=3e3ec0aa-514d-4189-89c6-0138795cb615', category: 't-shirts' },
+  { name: 'Leônidas 300', description: faker.lorem.paragraph(), image_url: 'https://firebasestorage.googleapis.com/v0/b/imagens-bc6d5.appspot.com/o/300%201.jpg?alt=media&token=8742124c-7e05-4df6-982a-5f6d093ef997', category: 't-shirts' },
 ]
 
 const allProducts = new Array(TOTAL_PAGES).fill(1).reduce((acc) => {
