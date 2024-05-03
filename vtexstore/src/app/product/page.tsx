@@ -7,6 +7,7 @@ import { useProduct } from "@/hooks/useProduct";
 import { Product } from "@/types/product";
 import { formatPrice } from "@/utils/format-price";
 import { styled } from "styled-components"
+import { useRouter } from "next/navigation";
 
 /*
 useProduct: Um hook que faz uma chamada à API para obter os detalhes do produto com base no ID fornecido.
@@ -16,8 +17,6 @@ props: { searchParams: { id: string } }: Este componente espera um objeto search
 Hook useProduct: Utiliza o hook useProduct para obter os detalhes do produto com base no ID fornecido nas props.
 
 Função handleAddToCart: Uma função que é chamada quando o botão "Adicionar ao carrinho" é clicado. Ela adiciona o produto ao carrinho armazenado localmente, verificando se já existe um produto com o mesmo ID no carrinho e incrementando a quantidade, caso contrário, adicionando um novo item ao carrinho.
-
-
 */
 
 interface ProductProps {
@@ -120,6 +119,7 @@ const ProductInfo = styled.div`
 `
 
 export default function Product({ searchParams }: { searchParams: { id: string }}) {
+    const router = useRouter()
     const { data } = useProduct(searchParams.id);
     
     const handleAddToCart = () => {
@@ -140,9 +140,14 @@ export default function Product({ searchParams }: { searchParams: { id: string }
             const newCart = [{ ...data, quantity: 1, id: searchParams.id }]
             localStorage.setItem('cart-items', JSON.stringify(newCart));
         }
+        handleNavigateToCart(); // Chamada da função de redirecionamento após adicionar ao carrinho
     }
 
-    return(
+    const handleNavigateToCart = () => {
+        router.push("/cart"); // Função de redirecionamento para a página do carrinho
+    }
+
+    return (
         <DefaultPageLayout>
             <Container>
                 <BackBtn navigate="/"/>
