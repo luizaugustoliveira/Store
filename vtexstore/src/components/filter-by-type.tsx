@@ -24,7 +24,7 @@ const FilterItem = styled.li`
     text-transform: uppercase;
     cursor: pointer;
     color: var(--text-dark);
-    border-bottom: 4px solid var(--orange-low);
+    border-bottom: 4px solid var(--pink-low);
 
     @media (min-width: ${props => props.theme.desktopBreakpoint}) {
         font-size: 16px;
